@@ -95,5 +95,3 @@ ros2 run drone_perception aruco_detector_node
 ## Remarques
 
 - Toujours vérifier `ros2 topic info -v <topic>` avant d'écrire une nouvelle souscription — les topics MAVROS n'ont pas tous le même profil QoS, une incompatibilité fait échouer la réception silencieusement.
-- En cas de blocage à l'armement, consulter la console `pxh>` du SITL : c'est la seule source fiable pour connaître la cause exacte d'un refus.
-- Si une mission relancée reste bloquée sans redémarrer, réinitialiser l'index courant via le service `/mavros/mission/set_current` avant de rebasculer en mode mission.
