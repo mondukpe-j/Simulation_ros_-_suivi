@@ -1,0 +1,31 @@
+[1.401s] Invoking command in '/workspace/src/ros_sv/drone_perception': PYTHONPATH=/workspace/src/ros_sv/build/drone_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/drone_perception build --build-base /workspace/src/ros_sv/build/drone_perception/build install --record /workspace/src/ros_sv/build/drone_perception/install.log --install-scripts $base/lib/drone_perception --single-version-externally-managed install_data
+[1.976s] running egg_info
+[2.015s] creating ../build/drone_perception/drone_perception.egg-info
+[2.016s] writing ../build/drone_perception/drone_perception.egg-info/PKG-INFO
+[2.018s] writing dependency_links to ../build/drone_perception/drone_perception.egg-info/dependency_links.txt
+[2.018s] writing requirements to ../build/drone_perception/drone_perception.egg-info/requires.txt
+[2.019s] writing top-level names to ../build/drone_perception/drone_perception.egg-info/top_level.txt
+[2.019s] writing manifest file '../build/drone_perception/drone_perception.egg-info/SOURCES.txt'
+[2.083s] reading manifest file '../build/drone_perception/drone_perception.egg-info/SOURCES.txt'
+[2.085s] writing manifest file '../build/drone_perception/drone_perception.egg-info/SOURCES.txt'
+[2.085s] running build
+[2.085s] running build_py
+[2.085s] creating /workspace/src/ros_sv/build/drone_perception/build/lib/drone_perception
+[2.085s] copying drone_perception/__init__.py -> /workspace/src/ros_sv/build/drone_perception/build/lib/drone_perception
+[2.086s] copying drone_perception/aruco_detection_node.py -> /workspace/src/ros_sv/build/drone_perception/build/lib/drone_perception
+[2.086s] running install
+[2.095s] running install_lib
+[2.131s] creating /workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages/drone_perception
+[2.132s] copying /workspace/src/ros_sv/build/drone_perception/build/lib/drone_perception/__init__.py -> /workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages/drone_perception
+[2.132s] copying /workspace/src/ros_sv/build/drone_perception/build/lib/drone_perception/aruco_detection_node.py -> /workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages/drone_perception
+[2.133s] byte-compiling /workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages/drone_perception/__init__.py to __init__.cpython-310.pyc
+[2.133s] byte-compiling /workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages/drone_perception/aruco_detection_node.py to aruco_detection_node.cpython-310.pyc
+[2.135s] running install_data
+[2.136s] creating /workspace/src/ros_sv/install/drone_perception/share/ament_index/resource_index/packages
+[2.136s] copying resource/drone_perception -> /workspace/src/ros_sv/install/drone_perception/share/ament_index/resource_index/packages
+[2.136s] copying package.xml -> /workspace/src/ros_sv/install/drone_perception/share/drone_perception
+[2.137s] running install_egg_info
+[2.169s] Copying ../build/drone_perception/drone_perception.egg-info to /workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages/drone_perception-0.0.0-py3.10.egg-info
+[2.170s] running install_scripts
+[2.251s] writing list of installed files to '/workspace/src/ros_sv/build/drone_perception/install.log'
+[2.305s] Invoked command in '/workspace/src/ros_sv/drone_perception' returned '0': PYTHONPATH=/workspace/src/ros_sv/build/drone_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros_sv/install/drone_perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/drone_perception build --build-base /workspace/src/ros_sv/build/drone_perception/build install --record /workspace/src/ros_sv/build/drone_perception/install.log --install-scripts $base/lib/drone_perception --single-version-externally-managed install_data

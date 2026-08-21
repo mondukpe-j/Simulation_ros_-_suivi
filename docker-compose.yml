@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  ros2-mavros:
+    build: .
+    container_name: ros_sv
+    working_dir: /workspace
+    volumes:
+      - ./code:/workspace/src
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw   # affichage GUI (RViz2, Gazebo)
+    environment:
+      - DISPLAY=${DISPLAY}
+      - QT_X11_NO_MITSHM=1
+    stdin_open: true
+    tty: true
+    command: bash

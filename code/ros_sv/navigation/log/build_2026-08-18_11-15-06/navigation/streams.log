@@ -1,0 +1,24 @@
+[1.217s] Invoking command in '/workspace/src/ros_sv/navigation': PYTHONPATH=/workspace/src/ros_sv/navigation/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros_sv/navigation/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/navigation build --build-base /workspace/src/ros_sv/navigation/build/navigation/build install --record /workspace/src/ros_sv/navigation/build/navigation/install.log --install-scripts $base/lib/navigation --single-version-externally-managed install_data
+[1.728s] running egg_info
+[1.759s] writing build/navigation/navigation.egg-info/PKG-INFO
+[1.760s] writing dependency_links to build/navigation/navigation.egg-info/dependency_links.txt
+[1.761s] writing entry points to build/navigation/navigation.egg-info/entry_points.txt
+[1.761s] writing requirements to build/navigation/navigation.egg-info/requires.txt
+[1.761s] writing top-level names to build/navigation/navigation.egg-info/top_level.txt
+[1.822s] reading manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[1.824s] writing manifest file 'build/navigation/navigation.egg-info/SOURCES.txt'
+[1.825s] running build
+[1.825s] running build_py
+[1.825s] copying navigation/arm_takeoff_node.py -> /workspace/src/ros_sv/navigation/build/navigation/build/lib/navigation
+[1.827s] running install
+[1.835s] running install_lib
+[1.865s] copying /workspace/src/ros_sv/navigation/build/navigation/build/lib/navigation/arm_takeoff_node.py -> /workspace/src/ros_sv/navigation/install/navigation/lib/python3.10/site-packages/navigation
+[1.866s] byte-compiling /workspace/src/ros_sv/navigation/install/navigation/lib/python3.10/site-packages/navigation/arm_takeoff_node.py to arm_takeoff_node.cpython-310.pyc
+[1.868s] running install_data
+[1.869s] running install_egg_info
+[1.899s] removing '/workspace/src/ros_sv/navigation/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.900s] Copying build/navigation/navigation.egg-info to /workspace/src/ros_sv/navigation/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[1.902s] running install_scripts
+[1.965s] Installing arm_takeoff_node script to /workspace/src/ros_sv/navigation/install/navigation/lib/navigation
+[1.966s] writing list of installed files to '/workspace/src/ros_sv/navigation/build/navigation/install.log'
+[2.009s] Invoked command in '/workspace/src/ros_sv/navigation' returned '0': PYTHONPATH=/workspace/src/ros_sv/navigation/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/src/ros_sv/navigation/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/navigation build --build-base /workspace/src/ros_sv/navigation/build/navigation/build install --record /workspace/src/ros_sv/navigation/build/navigation/install.log --install-scripts $base/lib/navigation --single-version-externally-managed install_data

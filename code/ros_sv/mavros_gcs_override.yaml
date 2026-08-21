@@ -1,0 +1,5 @@
+# mavros_gcs_override.yaml
+/**:
+  ros__parameters:
+    conn:
+      heartbeat_mav_type: "GCS"
