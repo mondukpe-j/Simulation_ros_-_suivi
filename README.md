@@ -32,14 +32,11 @@ Le modèle `x500_mono_cam` inclut la caméra nécessaire à la partie perception
 
 ## Lancer MAVROS
 
-Terminal 2 (`docker exec -it <nom_du_conteneur> bash`) :
+Terminal 2 (`docker exec -it ros_sv bash`)  (le conteneur s'appelle également ros_sv) :
 
 ```bash
-ros2 launch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14580" \
-    config_yaml:=/workspace/mavros_gcs_override.yaml
+ros2 launch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14580"
 ```
-
-`mavros_gcs_override.yaml` force MAVROS à s'annoncer comme station sol (GCS) auprès de PX4 — sans ça, l'armement reste refusé indéfiniment.
 
 Vérifier la connexion : `ros2 topic echo /mavros/state` doit afficher `connected: true`.
 
@@ -55,12 +52,22 @@ ros2 run ros_gz_bridge parameter_bridge \
     /world/default/model/x500_mono_cam_0/link/camera_link/sensor/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo
 ```
 
-## Compiler les packages ROS 2
+## Lancer les ponts caméra Gazebo → ROS 2
 
-Depuis la racine du workspace (`ros_sv/`) :
+Terminal 3 et 4 (un par pont, à garder actifs) :
 
 ```bash
-cd /workspace
+ros2 run ros_gz_bridge parameter_bridge \
+    /world/default/model/x500_mono_cam_0/link/camera_link/sensor/camera/image@sensor_msgs/msg/Image[gz.msgs.Image
+
+ros2 run ros_gz_bridge parameter_bridge \
+    /world/default/model/x500_mono_cam_0/link/camera_link/sensor/camera/camera_info@sensor_msgs/msg/CameraInfo[gz.msgs.CameraInfo
+```
+
+## Compiler les packages ROS 2
+
+```bash
+cd /workspace/src/ros_sv
 colcon build
 source install/setup.bash
 ```
