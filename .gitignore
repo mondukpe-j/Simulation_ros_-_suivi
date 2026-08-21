@@ -49,3 +49,6 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+# PX4-Autopilot
+src/PX4-Autopilot
